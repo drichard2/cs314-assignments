@@ -1,0 +1,58 @@
+/* myStyle.css */
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.flex-container > div {
+  background-color: #31D3F0;
+
+  text-align: center;
+
+}
+
+a {
+
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img {
+	padding-right: 200px;
+	padding-left: 200px
+	;
+}
+
+h2 {
+
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+
+}
+
+p {
+	padding-top: 0px;
+
+
+    text-align: center;
+
+}
+
+footer {
+	padding-top: 50px;
+	text-align: right; 
+}
