@@ -1,10 +1,19 @@
 /* myStyle.css */
 
 
+@font-face {
+    font-family: garamond;
+    src: url(garamond.ttf);
+
+}
+
 .flex-container {
   display: flex;
   justify-content: center;
 
+}
+div {
+    font-family: garamond;
 }
 
 .flex-container > div {
@@ -97,6 +106,7 @@ h2 {
 }
 
 p {
+	color:white;
 	padding-top: 0px;
     text-align: center;
 }
