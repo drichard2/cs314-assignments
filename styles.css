@@ -3,9 +3,29 @@
 
 @font-face {
     font-family: garamond;
-    src: url(garamond.ttf);
+    src: url(garamond.ttf) format('embedded-opentype'),
+    	 url('garamond.woff2') format('woff2'),
+    	 url('garamond.woff') format('woff'), 
+       	 url('garamond.ttf')  format('truetype');
+       	}
 
+
+/*
+
+@font-face {
+  eot
+  woff2
+  woff
+  tty
+  
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); 
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), 
+       url('webfont.woff2') format('woff2'),
+       url('webfont.woff') format('woff'), 
+       url('webfont.ttf')  format('truetype'), 
 }
+*/
 
 .flex-container {
   display: flex;
