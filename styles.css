@@ -31,13 +31,14 @@
   display: flex;
   justify-content: center;
 
+
 }
 div {
     font-family: garamond;
 }
 
 .flex-container > div {
-  background-color: #31D3F0;
+     background: linear-gradient(red, yellow);
 
   text-align: center;
   margin-bottom:20px;
@@ -48,6 +49,7 @@ div {
 height: 500px;
   display: flex;
   justify-content: center;
+
   align-content:center
  ;
 
@@ -91,6 +93,9 @@ height: 50px;
 	background-color: #000000;
 }
 
+.flex-container7 {
+  justify-content: center;
+}
 
 
 a {
@@ -126,7 +131,7 @@ h2 {
 }
 
 p {
-	color:white;
+	color:black;
 	padding-top: 0px;
     text-align: center;
 }
