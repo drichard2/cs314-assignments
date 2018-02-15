@@ -1,0 +1,53 @@
+/*
+
+I was not sure what the following meant : 
+"Add some kind of hover state with transition to at least one element
+on this page."
+
+So I may or may not have implemented that 
+
+;
+
+source: w3 schools and https://css-tricks.com/different-transitions-for-hover-on-hover-off/;
+
+*/
+
+
+
+body {
+	background-image :url("blue.jpg");
+}
+
+
+
+.flex-container {
+  justify-content: center;
+}
+
+.flex-container:hover {
+   padding: 50px;
+   border-radius: 45px;
+  -webkit-animation: NAME-YOUR-ANIMATION 5s infinite; /* Safari 4+ */
+  -moz-animation:    NAME-YOUR-ANIMATION 5s infinite; /* Fx 5+ */
+  -o-animation:      NAME-YOUR-ANIMATION 5s infinite; /* Opera 12+ */
+  animation:         NAME-YOUR-ANIMATION 5s infinite; /* IE 10+, Fx 29+ */
+
+
+}
+
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
