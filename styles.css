@@ -21,7 +21,8 @@ div {
 }
 
 .flex-container > div {
-     background: linear-gradient(red, yellow);
+  
+  background-color:#808080;
 
   text-align: center;
   margin-bottom:20px;
@@ -63,6 +64,7 @@ height: 500px;
 }
 
 .flex-container4{
+
  background-color: #000080;
  height: 400px;
   display: flex;
@@ -74,21 +76,29 @@ height: 500px;
 
 }
 
+.container5{
 
-.flex-container5 {
-	height:100px;
-	margin:50px;
+  color: #808080;
+  background-color: #808080;
+
 
 }
 
-.flex-container6 {
-	background-color: #000000;
-}
-
-.flex-container7 {
+.flex-container6{
+  align-items: center;
   justify-content: center;
+  display: flex;
+  text-align:center;
 }
 
+
+.flex-container6{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align:center;
+  flex-wrap:wrap;
+}
 
 a {
 
@@ -115,8 +125,11 @@ a:active {
 }
 
 h1 {
+  padding-top: 50px;
+  padding-bottom:10px;
     text-align: center;
     text-transform: uppercase;
+    color:black;
 }
 
 img {
@@ -135,9 +148,10 @@ h2 {
 }
 
 p {
-	color:black;
+	color:white;
 	padding-top: 0px;
     text-align: center;
+    padding-bottom:10px;
 }
 
 footer {
