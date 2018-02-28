@@ -26,6 +26,13 @@ div {
 
 }
 
+
+textarea {
+  resize: none;
+  width:75%;
+  border-color: lightblue;
+  color:red;
+}
 h1 {
   text-align: center;
   color: white;
@@ -41,8 +48,10 @@ area {
   width:max-width;
 }
 form {
+
   text-align: center;
-  width:max-width;
+
+ 
 }
 
 select {
@@ -54,7 +63,8 @@ input {
   text-align: center;
   border-color:grey;
   background-color: white;
-  width:max-width;
+  width:75%
+
  }
 
  input[type=submit] {
@@ -89,6 +99,9 @@ border-radius: 20px;
 
 }
 
+p {
+  text-align: center;
+}
 
 input[type=submit]:active {
 
