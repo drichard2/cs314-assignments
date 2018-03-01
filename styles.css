@@ -32,6 +32,7 @@ textarea {
   width:75%;
   border-color: lightblue;
   color:red;
+  text-decoration-color: red;
 }
 h1 {
   text-align: center;
@@ -47,6 +48,17 @@ area {
   text-align: center; 
   width:max-width;
 }
+
+*::-webkit-input-placeholder {
+    color: red;
+}
+
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: red;
+}
+
+
 form {
 
   text-align: center;
@@ -57,13 +69,15 @@ form {
 select {
   text-align: center;
   display:center;
-  width:max-width;
+
 }
 input { 
   text-align: center;
   border-color:grey;
   background-color: white;
-  width:75%
+  width:75%;
+  text-decoration-color:red;
+
 
  }
 
@@ -72,17 +86,11 @@ input {
     background: #0066A2;
 
   color: white;
-
-
-
-
-
   height: 50px;
-
   width: 100px;
   border: 1px solid #eee;
-border-radius: 20px;
-  font: bold 15px arial, sans-serif;
+  border-radius: 20px;
+
 
 
 }
