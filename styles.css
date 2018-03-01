@@ -25,7 +25,9 @@ div {
   font-family: garamond;
 
 }
-
+form{
+  text-align: center;
+}
 
 textarea {
   resize: none;
@@ -54,17 +56,10 @@ area {
 }
 
 *::-moz-placeholder {
-    /* FF 19+ */
     color: red;
 }
 
 
-form {
-
-  text-align: center;
-
- 
-}
 
 select {
   text-align: center;
@@ -72,6 +67,7 @@ select {
 
 }
 input { 
+  align-content: horizontal;
   text-align: center;
   border-color:grey;
   background-color: white;
