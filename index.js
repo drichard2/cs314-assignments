@@ -2,14 +2,19 @@
 //1   charSwap();
 //2   hi();
 //3   threeCharToFront();
-//4   
-stringsToSentence();
+//4   stringsToSentence();
 //5   upperOrLower();
 //6  integerSwap();
 //7 longestString();
 //8 longestEvenNumber();
 //9 currDateTime();
 //10 unlmArgs("bob","john","ron");
+
+firstRun();
+
+function firstRun(){
+	alert ("to run tests on functions just remove comment stuff from the function call for each individually (one function at a time)");
+}
 
 
 function unlmArgs(){
