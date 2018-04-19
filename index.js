@@ -89,3 +89,37 @@ function removeItem4(){
 	item.parentNode.removeChild(item);
 	
 }
+
+
+
+function highlightItem1(){
+
+	document.getElementById("bob1").style.backgroundColor='blue';
+	document.getElementById("tim1").style.backgroundColor='lightgrey';
+	document.getElementById("jack1").style.backgroundColor='lightgrey';
+	document.getElementById("sam1").style.backgroundColor='lightgrey';
+}
+
+function highlightItem2(){
+
+	document.getElementById("bob1").style.backgroundColor='lightgrey';
+	document.getElementById("tim1").style.backgroundColor='blue';
+	document.getElementById("jack1").style.backgroundColor='lightgrey';
+	document.getElementById("sam1").style.backgroundColor='lightgrey';
+}
+
+function highlightItem3(){
+
+	document.getElementById("bob1").style.backgroundColor='lightgrey';
+	document.getElementById("tim1").style.backgroundColor='lightgrey';
+	document.getElementById("jack1").style.backgroundColor='blue';
+	document.getElementById("sam1").style.backgroundColor='lightgrey';
+}
+
+function highlightItem4(){
+
+	document.getElementById("bob1").style.backgroundColor='lightgrey';
+	document.getElementById("tim1").style.backgroundColor='lightgrey';
+	document.getElementById("jack1").style.backgroundColor='lightgrey';
+	document.getElementById("sam1").style.backgroundColor='blue';
+}
