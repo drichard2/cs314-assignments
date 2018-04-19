@@ -11,25 +11,25 @@
     <section id="selection">
       <div class="inner-content">
         <p>Select the number that you want to scroll to:</p>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+        <button onclick="buttonClicked1()">1</button>
+        <button onclick="buttonClicked2()">2</button>
+        <button onclick="buttonClicked3()">3</button>
+        <button onclick="buttonClicked4()">4</button>
+        <button onclick="buttonClicked5()">5</button>
       </div>
     </section>
     <section class="dark-bg" id="one">
       <div class="inner-content">
         <p>1. Pick a background color:</p>
-        <button>Blue</button>
-        <button>Green</button>
+        <button onclick="backgroundColorBlue()">Blue</button>
+        <button onclick="backgroundColorGreen()">Green</button>
       </div>
     </section>
     <section id="two">
       <div class="inner-content">
         <p>2. Click the button to change between a pink and orange background:</p>
         <p>The text on the button will represent the color the user will get.</p>
-        <button>Click for pink!</button>
+        <button onclick="toggleColor()" id="button">Click for pink!</button>
       </div>
     </section>
     <section class="dark-bg" id="three">
