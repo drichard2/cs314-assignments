@@ -69,3 +69,23 @@ function addToList (){
 
 }
 
+
+function removeItem1(){
+	var item = document.getElementById('bob');
+	item.parentNode.removeChild(item);
+}
+function removeItem2(){
+	var item = document.getElementById('tim');
+	item.parentNode.removeChild(item);
+	
+}
+function removeItem3(){
+	var item = document.getElementById('jack');
+	item.parentNode.removeChild(item);
+	
+}
+function removeItem4(){
+	var item = document.getElementById('sam');
+	item.parentNode.removeChild(item);
+	
+}
