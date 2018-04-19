@@ -58,3 +58,14 @@ function toggleColor(){
 
 }
 
+function addToList (){
+	var text = document.getElementById("input").value;
+	console.log(text);
+
+	var list = document.getElementById("list");
+	var entry = document.createElement('li');
+	entry.appendChild(document.createTextNode(text));
+	list.appendChild(entry);
+
+}
+
