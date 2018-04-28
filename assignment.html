@@ -7,66 +7,46 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="assignment-styles.css">
   </head> 
-  <body>
-    <section id="selection">
-      <div class="inner-content">
-        <p>Select the number that you want to scroll to:</p>
-        <button onclick="buttonClicked1()">1</button>
-        <button onclick="buttonClicked2()">2</button>
-        <button onclick="buttonClicked3()">3</button>
-        <button onclick="buttonClicked4()">4</button>
-        <button onclick="buttonClicked5()">5</button>
-      </div>
-    </section>
-    <section class="dark-bg" id="one">
-      <div class="inner-content">
-        <p>1. Pick a background color:</p>
-        <button onclick="backgroundColorBlue()">Blue</button>
-        <button onclick="backgroundColorGreen()">Green</button>
-      </div>
-    </section>
-    <section id="two">
-      <div class="inner-content">
-        <p>2. Click the button to change between a pink and orange background:</p>
-        <p>The text on the button will represent the color the user will get.</p>
-        <button onclick="toggleColor()" id="button">Click for pink!</button>
-      </div>
-    </section>
-    <section class="dark-bg" id="three">
-      <div class="inner-content">
-        <p>3. Input text to add to the list below</p>
-        <input type="text" id="input">
-        <button onclick="addToList()"" id= "button2" >Submit</button>
-        <ul id = "list">
-          <li>One</li>
-          <li>Green</li>
-        </ul>
-      </div>
-    </section>
-    <section id="four">
-      <div class="inner-content">
-        <p>4. If an item is clicked, remove it from the list.</p>
-        <ul>
-          <li onclick="removeItem1()" id = 'bob'>Bob</li>
-          <li onclick="removeItem2()" id = 'tim'>Tim</li>
-          <li onclick="removeItem3()" id = 'jack'>Jack</li>
-          <li onclick="removeItem4()" id = 'sam'>Sam</li>          
-        </ul>
-      </div>
-    </section>
-    <section class="dark-bg" id="five">
-      <div class="inner-content">
-        <p>5. If an item is clicked, select it (highlight it) and de-select everything else.</p>
-        <p>This doesn't have to be pretty.</p>
-        <p>Just change the background color of the selected item with a class.</p>
-        <ul>
-          <li onclick = "highlightItem1()" id = "bob1">Bob</li>
-          <li onclick = "highlightItem2()" id = "tim1">Tim</li>
-          <li onclick = "highlightItem3()" id = "jack1">Jack</li>
-          <li onclick = "highlightItem4()" id = "sam1">Sam</li>          
-        </ul>
-      </div>
-    </section>
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>    
+    
+    $(document).ready(function () {
+            for (var i=1; i<11;i++){
+                 $.ajax({
+
+                     url: 'https://jsonplaceholder.typicode.com/users/'+i,
+
+                     type: 'GET',
+                     dataType: 'json',
+                     success: function (id, name) {
+
+                         console.log(id.name);
+
+                         var name = id.name;
+                         var email = id.email;
+                         var company = id.company;
+
+                         var text = id.name +" , " +id.email+" , "+id.company.name;
+                         var list = document.getElementById('namelist');
+                         var entry = document.createElement('li');
+                         entry.appendChild(document.createTextNode(text));
+                         list.appendChild(entry);
+
+                     },
+                     error: function (xhr, textStatus, errorThrown) {
+                         console.log('Error in Operation');
+                     }
+          
+             });}
+         });
+
+</script>
+  
+
    <script src="index.js"></script>
+
+    <ul id = 'namelist'>
+      <li>vov</li>
+    </ul> 
+
 </html>
