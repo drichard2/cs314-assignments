@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="assignment-styles.css">
   </head> 
 
-  <h1> I started this assignment way too late (went to the baseball game, then in the 7th inning, remembered I had homework. I prioritized getting the json stuff done rather than style. I ask for merciful grading)</h1>
+  <h1> I started this assignment way too late (went to the baseball game, then in the 7th inning, remembered I had homework. I prioritized getting the json stuff done rather than style. I get this is pretty unreadable, but I have the names, todos, and albums all there from the API)</h1>
+
+  <br>
+  <h1> have mercy on me </h1>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script>    
     
@@ -50,16 +53,53 @@
                                     for (var i = 0; i < todos.length; i++) {
                                           if(todos[i].userId == num){
                                             console.log(todos[i].title);
-                                            entry.appendChild(document.createTextNode(todos[i].title));
+                                            entry.appendChild(document.createTextNode(todos[i].title+":"+todos[i].completed+ '_'));
 
                                           }
                                         }
+                                  
                                   },
                                   error: function (xhr, textStatus, errorThrown) {
                                   console.log('Error in Operation');
                                   }
 
-                                });}
+                                });
+
+
+
+                                                                console.log("clicl");
+                                $.ajax({
+                                  url :'https://jsonplaceholder.typicode.com/albums/',
+                                  type :'GET',
+                                  dataType: 'json',
+                                  success :function (albums){
+
+
+                                    for (var i = 0; i < albums.length; i++) {
+                                          if(albums[i].userId == num){
+                                            console.log(albums[i].title);
+                                            entry.appendChild(document.createTextNode("ALBUM"+albums[i].title));
+
+                                          }
+                                        }
+                                  
+                                  },
+                                  error: function (xhr, textStatus, errorThrown) {
+                                  console.log('Error in Operation');
+                                  }
+
+                                });
+
+
+
+
+
+
+
+
+
+
+                              }
                                 list.appendChild(entry);
                                   
                          },
