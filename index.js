@@ -35,7 +35,7 @@
                                           if(todos[i].userId == num){
                                             console.log(todos[i].title);
                                             var item = document.createElement('li');
-                                            item.appendChild(document.createTextNode("TODO :"+todos[i].completed+" : "+todos[i].title));
+                                            item.appendChild(document.createTextNode("TODO : "+todos[i].completed+" : "+todos[i].title));
                                             todoList.appendChild(item);
 
                                           }
