@@ -46,6 +46,17 @@ h3{
   color: black;
 }
 
+ul{
+  background: lightblue;
+  text-align: center;
+  text-decoration-color: white;
+  color:white;
+}
+li {
+  text-decoration-color: white;
+  color:white;
+}
+
 area {
   text-align: center; 
   width:max-width;
@@ -67,7 +78,8 @@ select {
 
 }
 input { 
-  align-content: horizontal;
+  align-self: middle;
+  align-content: vertical;
   text-align: center;
   border-color:grey;
   background-color: white;
@@ -77,9 +89,10 @@ input {
 
  }
 
- input[type=submit] {
+ input[type=text] {
 
-    background: #0066A2;
+  text-align: center;
+  background: #0066A2;
 
   color: white;
   height: 50px;
@@ -90,7 +103,7 @@ input {
 
 
 }
-input[type=submit]:hover {
+input[type=text]:hover {
 
 background: yellow;
 
@@ -107,7 +120,7 @@ p {
   text-align: center;
 }
 
-input[type=submit]:active {
+input[type=text]:active {
 
 background: green;
 

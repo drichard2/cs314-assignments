@@ -86,7 +86,7 @@ function checkEmail( email) {
 
 function validatePhone(fld) {
  
-    var stripped = fld.replace(/[\(\)\.\-\ ]/g, '');    
+    var stripped = fld.replace(/[\(\)\.\-\ ]/g, '');     
 
    if (fld == "") {
         alert("You didn't enter a phone number.\n");

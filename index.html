@@ -1,106 +1,67 @@
-<!--couldnt figure out why the icon/text/view more part of the page is spaced apart so much-->
-
-
 <!DOCTYPE html>
-
-
 <html>
 <div>
-
   <head>
-
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <meta charset="utf-8">
-    <title>About Me</title>
+    <title>Spocompton</title>
     <link rel="sytlesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="form.js"></script>
+    <script src="food.js"></script>
     <script>
-
 </script>
     </style>
   </head>
-  
-  <body>
-
-
-<div style ="background-color : red;">
+<body>
+<div style ="background-color : green;">
 <h1>
-  Want to get in Touch?
+  Things to do in Spokane
 </h1>
-
-
-
 </div>
-
-<div>
-
-<form >
-  First name:<br>
-  <input type="text" id = "firstname" name="firstname" placeholder="Enter First Name" >
-  <br>
-  
-  Last name:<br>
-  <input type="text" id = "lastname" name="lastname" placeholder="Enter Lase Name" >
-  <br>
-
-   <br>
-  
-  Nunber:<br>
-  <input type="number" id = "number" name="number" placeholder="Enter Phone Number"  >
-  <br>
-   EMAIL:<br>
-  <input type="email" id = "email" name="email" placeholder="Enter Email" >
-  <br>
-  
-
-
-  <br>
-   Message:<br>
-
-  <textarea id = "message" rows="4" cols="50" placeholder="Tell me about yourself">
-  </textarea>
-  <br>
-  <br>
-  
-</form> 
-
-</body>
-
-
-</div>
-
-
-
-</div>
-<div style="text-align: center">
-
-<br>
-<br>
-<input type="submit" id = "button" value="Submit" onClick = "submit()" >
-</div>
-
-
-
-
-
-<h2 id="newtext" style="text-align: center">
-
-</h2>
-
-<h3 id ="snumber" >
-	</h3>
-<h3 id = "semail" >
+<h3>
+	What type of activity do you like?
 </h3>
+</div>
+<div style= "text-align:center">
+<input  type="text" id = "Sports" value="Sports" onClick = "sports()" >
+<input type="text" id = "Outdoors" value="Outdoors" onClick = "outdoors()" >
+<input type="text" id = "Food" value="Food" onClick = "food()" >
+</div>
+ <ul id = "sportslist" style = "display: none">
+ 	<li>
+		<a href="gozags.com">Gonzaga Basketball</a>
+ 	</li>
+ 	<li>
+		<a href="spokanechiefs.com">Spokane Chiefs</a>
+ 	</li>
+ 	<li>
+		<a href="http://www.milb.com/index.jsp?sid=t486">Spokane Indians</a>
+ 	</li>
+</ul> 
+ <ul id = "foodlist" style = "display: none">
+ 	<li>
+		<a href="theonion.biz">The Onion</a>
+ 	</li>
+ 	<li>
+		<a href="deleonfoods.net">De Leon Foods</a>
+ 	</li>
+ 	<li>
+		<a href="http://www.theflyinggoat.com/">The Flying Goat</a>
+ 	</li>
+</ul>
 
-<p id = "content">
 
-</p>
-
-
-
-
-
-
+<ul id = "outdoorlist" style = "display: none">
+ 	<li>
+		<a href="schweitzer.com">Schweitzer Mountain Resort</a>
+ 	</li>
+ 	<li>
+		<a href="https://www.wta.org/go-hiking/hikes/riverside-state-park">Bowl and Pitcher</a>
+ 	</li>
+ 	<li>
+		<a href="http://coeurdalene.org/">Coeur D' Alene</a>
+ 	</li>
+</ul>
+</body>
 </html>
