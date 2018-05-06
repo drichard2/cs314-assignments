@@ -47,14 +47,16 @@ h3{
 }
 
 ul{
-  background: lightblue;
+  
   text-align: center;
   text-decoration-color: white;
-  color:white;
+  color: white;
+
 }
 li {
   text-decoration-color: white;
-  color:white;
+  color: white;
+  
 }
 
 area {
