@@ -60,6 +60,7 @@ textarea {
   border-color: lightblue;
   color:red;
   text-decoration-color: red;
+  background-color: darkgrey;
 }
 h1 {
   text-align: center;
@@ -95,9 +96,10 @@ input {
   align-content: horizontal;
   text-align: center;
   border-color:grey;
-  background-color: white;
+  background-color: darkgrey;
   width:75%;
   text-decoration-color:red;
+
 
 
  }
@@ -143,8 +145,13 @@ a {
 
 
 
+body{
+  background : black;
+}
 
-
+footer{
+  padding-top 
+}
 
 
 
