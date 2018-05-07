@@ -5,7 +5,7 @@ function sports(){
 	list3.style.display="none";
 	list2.style.display="none";
 	list.style.display="";
-	console.log("tesxt");
+
 }
 
 function outdoors(){
@@ -16,7 +16,7 @@ function outdoors(){
 	list3.style.display="none";
 	list2.style.display="none";
 	list.style.display="";
-	console.log("tesxt");
+
 }
 
 
@@ -28,5 +28,5 @@ function food(){
 	list3.style.display="none";
 	list2.style.display="none";
 	list.style.display="";
-	console.log("tesxt");
+
 }
