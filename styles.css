@@ -92,17 +92,54 @@ select {
   display:center;
 
 }
-input { 
-  align-content: horizontal;
+
+.inputx{
+    padding:;
+  font-size: ;
   text-align: center;
-  border-color:grey;
-  background-color: darkgrey;
-  width:75%;
-  text-decoration-color:red;
+  cursor:
+  outline:;
+  color:;
+  background-color: ;
+  border: none;
+  border-radius: ;
+  box-shadow: ;
+
+}
+
+select { 
+  padding: 15px 25px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 
 
 
  }
+
+ input[type = submit]:active {
+    background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+ }
+ input[type=submit]:active {
+
+background: green;
+
+color: #fff;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+}
+
 
  input[type=submit] {
 
@@ -119,13 +156,7 @@ input {
 }
 input[type=submit]:hover {
 
-background: yellow;
-
-color: #fff;
-
-border: 1px solid #eee;
-
-border-radius: 20px;
+background-color: #3e8e41
 
 
 }
@@ -159,17 +190,6 @@ p {
   text-align: center;
 }
 
-input[type=submit]:active {
-
-background: green;
-
-color: #fff;
-
-border: 1px solid #eee;
-
-border-radius: 20px;
-
-}
 
 
 br {
