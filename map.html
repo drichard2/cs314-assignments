@@ -1,36 +1,130 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <meta charset="utf-8">
+    <title>Spo Foods</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 75%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 75%;
-        width: 75%;
-        margin: 0;
-        padding: 0;
-      }
+       #map {
+        height: 400px;
+        width: 100%;
+       }
     </style>
   </head>
+
   <body>
+    <h1 style = "color:black">My Google Maps Demo</h1>
     <div id="map"></div>
     <script>
-      var map;
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+        var spokane = {lat: 47.686826, lng: -117.406207};
+        var theonion = {lat: 47.658214, lng: -117.416246};
+        var deleon = {lat: 47.714604, lng: -117.407725};
+        var flyinggoat = {lat:47.690647,lng: -117.460232}
+
+        var theOnionLabel = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">The Onion</h1>'+
+            '<div id="bodyContent">'+
+
+            '<p>The Onion is an excelent tap house with great food ' +
+            'with 51 beers on tap and the best desert Ive had (The Messy Face) '+
+            'You need to go to the Onion </p> '+
+            '</div>'+
+            '</div>';
+
+         var theOnionWindow = new google.maps.InfoWindow({
+          content: theOnionLabel
         });
+
+
+         var deLeonLabel = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">De Leon Foods</h1>'+
+            '<div id="bodyContent">'+
+            
+            '<p>Great mexican food with homemade tortillas ' +
+ 
+             '</p> '+
+            '</div>'+
+            '</div>';
+
+         var deLeonWindow = new google.maps.InfoWindow({
+          content: deLeonLabel
+        });
+
+        var flyingGoatLabel = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">The Flying Goat</h1>'+
+            '<div id="bodyContent">'+
+            
+            '<p>Pizza that is good' +
+ 
+             '</p> '+
+            '</div>'+
+            '</div>';
+
+         var flyingGoatWindow = new google.maps.InfoWindow({
+          content: flyingGoatLabel
+        });
+
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: spokane,
+        });
+
+        var marker = new google.maps.Marker({
+          position: theonion,
+          map: map
+        });
+
+        marker.addListener('click', function() {
+          theOnionWindow.open(map, marker);
+        });
+        var marker2 = new google.maps.Marker({
+          position: deleon,
+          map: map
+        });
+
+        marker2.addListener('click', function() {
+        deLeonWindow.open(map, marker2);
+        });
+
+        var marker3 = new google.maps.Marker({
+          position: flyinggoat,
+          map: map
+        });
+
+        marker3.addListener('click', function() {
+          flyingGoatWindow.open(map, marker3);
+        });
+
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIKamQxnIGE7OkZv6sZAuIan4B-KmveFk&callback=initMap"
-    async defer></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIKamQxnIGE7OkZv6sZAuIan4B-KmveFk&callback=initMap">
+    </script>
+
+    <ul id = "foodlist" >
+    <li>
+        <a href="http:theonion.biz">
+            <img src="onion.png" style = "background-color: black"></a>
+    </li>
+    <li>
+        <a href="http://deleonfoods.net"><img src="deleon.png" style = "background-color: black"></a>
+    </li>
+    <li>
+        <a href="http://www.theflyinggoat.com/"><img src="goat.png"</a>
+    </li>
+    </ul>
   </body>
-<
+</html>
