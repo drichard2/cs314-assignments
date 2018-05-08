@@ -15,7 +15,7 @@ $(document).ready(function () {
                         var strInstructions = id.meals[0].strInstructions;
                         var strMealThumb=id.meals[0].strMealThumb;
 
-                        console.log(category);
+                        
                          
                          var foodname = document.getElementById('foodname');
                          var foodcategory = document.getElementById('foodcategory');
@@ -55,7 +55,7 @@ function button() {
                         var strInstructions = id.meals[0].strInstructions;
                         var strMealThumb=id.meals[0].strMealThumb;
 
-                        console.log(category);
+                        
                          
                          var foodname = document.getElementById('foodname');
                          
@@ -69,9 +69,9 @@ function button() {
 
                          foodname.replaceChild(document.createTextNode(name), foodname.childNodes[0]);
                          foodcategory.replaceChild(document.createTextNode(category),foodcategory.childNodes[0]);
-                         console.log("Here");
+                      
                          instructions.replaceChild(document.createTextNode(strInstructions),instructions.childNodes[0]);
-                         console.log("here2")
+                 
 
                                 
                                   
