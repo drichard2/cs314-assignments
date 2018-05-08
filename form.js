@@ -4,13 +4,19 @@ function submit(){
 	var firstname = document.getElementById("firstname").value;
 
 	if (firstname.length ==0){
-		alert("Firstname not valid!");
+		//alert("Firstname not valid!");
+		var error = document.getElementById("error");
+		var msg = "Firstname Not Valid!";
+		error.replaceChild(document.createTextNode(msg), error.childNodes[0]);
 		return;
 	}
 	
 	var lastname = document.getElementById("lastname").value;
 	if (lastname.length ==0){
-		alert("Lastname not valid!");
+		var error = document.getElementById("error");
+		var msg = "Lastname Not Valid!";
+		error.replaceChild(document.createTextNode(msg), error.childNodes[0]);
+		//alert("Last Name not Valid");
 		return;
 		
 	}
@@ -26,7 +32,11 @@ function submit(){
 
 
 	if (!checkEmail(email)){
-		alert("email not valid");
+		//alert("email not valid");
+		var error = document.getElementById("error");
+		var msg = "Email Not Valid!";
+		error.replaceChild(document.createTextNode(msg), error.childNodes[0]);
+
 		return;
 	}
 
@@ -34,14 +44,21 @@ function submit(){
 	var message = document.getElementById("message").value;
 
 	if (message.length ==0){
-		alert("Message not valid!");
+	
+		var error = document.getElementById("error");
+		var msg = "No Message Entered!";
+		error.replaceChild(document.createTextNode(msg), error.childNodes[0]);
 		return;
 	}
 
 
+	var error = document.getElementById("error");
+	var msg = "";
+	error.replaceChild(document.createTextNode(msg), error.childNodes[0]);
+
 	var item = document.getElementById('newtext');
 	console.log(item);
-    item.appendChild(document.createTextNode("From: "+firstname+" "+lastname));
+    item.replaceChild(document.createTextNode("From: "+firstname+" "+lastname),item.childNodes[0]);
 
 
 
@@ -49,11 +66,11 @@ function submit(){
     var snumber = document.getElementById('snumber');
 
 
-    semail.appendChild(document.createTextNode("Email: "+email));
-	snumber.appendChild(document.createTextNode("Phone: "+phone));
+    semail.replaceChild(document.createTextNode("Email: "+email),semail.childNodes[0]);
+	snumber.replaceChild(document.createTextNode("Phone: "+phone), snumber.childNodes[0]);
 
     var content = document.getElementById('content');
-    content.appendChild(document.createTextNode(message));
+    content.replaceChild(document.createTextNode(message),content.childNodes[0]);
 
     var button = document.getElementById("button")
 
@@ -67,6 +84,8 @@ function resetForm(){
 	var phone = document.getElementById("number");
 	var email = document.getElementById("email");
 	var message = document.getElementById("message");
+
+
 
 	firstname.value="";
 	lastname.value="";
@@ -89,15 +108,24 @@ function validatePhone(fld) {
     var stripped = fld.replace(/[\(\)\.\-\ ]/g, '');     
 
    if (fld == "") {
-        alert("You didn't enter a phone number.\n");
+        //alert("You didn't enter a phone number.\n");
+        var error = document.getElementById("error");
+		var msg = "You didn't enter a phone number.\n";
+		error.replaceChild(document.createTextNode(msg), error.childNodes[0]);
         return false;
         
     } else if (isNaN(parseInt(stripped))) {
-        alert("The phone number contains illegal characters.\n");
+        //alert("The phone number contains illegal characters.\n");
+        var error = document.getElementById("error");
+		var msg = "The phone number contains illegal characters.\n";
+		error.replaceChild(document.createTextNode(msg), error.childNodes[0]);
         return false;
         
     } else if (!(stripped.length == 10)) {
-        alert("The phone number is the wrong length. Make sure you included an area code.\n");
+        //alert("The phone number is the wrong length. Make sure you included an area code.\n");
+        var error = document.getElementById("error");
+		var msg = "The phone number is the wrong length. Make sure you included an area code.\n";
+		error.replaceChild(document.createTextNode(msg), error.childNodes[0]);
         return false;
         
     }
